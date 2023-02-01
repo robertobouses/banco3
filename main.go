@@ -7,7 +7,11 @@ import (
 )
 
 func main() {
+	valor := movimientos.CuentaBancaria{}
+	dato := movimientos.DatosPersonales{}
 	fmt.Println("")
-	movimientos.Cargo()
+	dato.FormularioDatosPersonales()
+	valor.Cargo(3)
+	valor.Abono(1)
 
 }
